@@ -24,12 +24,25 @@
             <li>jalali Set</li>
             <li>Masud</li>
             <li>Bonolota</li>
+            <li>Dom de re baba!</li>
         </ul>
     </main>
 
     <script src="js/dom.js"></script>
     <script>
-        console.log('adding JS inside the Html File')
+        // const student = {
+        //     name: 'abul',
+        //     id: 11,
+        //     study: function (time) {
+        //         console.log('study kortase');
+        //     }
+        // }
+        // console.log('adding JS inside the Html File')
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for (const li of liCollection) {
+            console.log(li.innerText);
+        }
     </script>
 </body>
 
