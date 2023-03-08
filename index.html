@@ -20,12 +20,15 @@
     </header>
     <main>
         <h1>My Awesome Dom de baba!</h1>
-        <ul>
-            <li>jalali Set</li>
-            <li>Masud</li>
-            <li>Bonolota</li>
-            <li>Dom de re baba!</li>
-        </ul>
+        <section>
+            <h1>Fruits</h1>
+            <ul>
+                <li>jalali Set</li>
+                <li>Masud</li>
+                <li>Bonolota</li>
+                <li>Dom de re baba!</li>
+            </ul>
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
@@ -41,7 +44,12 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for (const li of liCollection) {
-            console.log(li.innerText);
+            console.log(li.innerText)
+        }
+        const headingCollection = document.getElementsByTagName('h1');
+
+        for (const h1 of headingCollection) {
+            console.log(h1.innerText);
         }
     </script>
 </body>
