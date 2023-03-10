@@ -41,14 +41,14 @@
             </ul>
         </section>
         <section class="fruits-container">
-            <h1 id="fruits-title">Fruits I like</h1>
+            <h1 id="fruits-title" class="some-class random-class">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Mango</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container" class="text-size">
             <h1 id="places-title">Places I like to Visit</h1>
             <ul>
                 <li class="item">Sundorbon</li>
@@ -60,6 +60,7 @@
     </main>
 
     <script src="js/dom.js"></script>
+    <script src="js/styleIn.js"></script>
     <script>
         // const student = {
         //     name: 'abul',
@@ -86,7 +87,7 @@
         const someLi = document.querySelectorAll('.fruits-container li');
         // console.log(someLi);
         for (const li of someLi) {
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 </body>
