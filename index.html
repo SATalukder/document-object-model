@@ -11,22 +11,50 @@
         li {
             color: tomato;
         }
+
+        #fruits-title {
+            color: black;
+        }
+
+        .item {
+            color: blueviolet;
+
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit repellendus a hic in sed omnis ab
+            consectetur eligendi quaerat laborum corporis odio quisquam accusantium perferendis, dicta ullam ad? Cumque!
+        </p>
     </header>
     <main>
         <h1>My Awesome Dom de baba!</h1>
         <section>
-            <h1>Fruits</h1>
             <ul>
                 <li>jalali Set</li>
                 <li>Masud</li>
                 <li>Bonolota</li>
                 <li>Dom de re baba!</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I like to Visit</h1>
+            <ul>
+                <li class="item">Sundorbon</li>
+                <li class="item">Bandorbon</li>
+                <li class="item">Cox-Bazar</li>
+                <li class="item2">Rangamati</li>
             </ul>
         </section>
     </main>
@@ -41,15 +69,19 @@
         //     }
         // }
         // console.log('adding JS inside the Html File')
-        const liCollection = document.getElementsByTagName('li');
+        //const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
-        for (const li of liCollection) {
-            console.log(li.innerText)
-        }
-        const headingCollection = document.getElementsByTagName('h1');
+        // for (const li of liCollection) {
+        //     console.log(li.innerText)
+        // }
+        // const headingCollection = document.getElementsByTagName('h1');
 
-        for (const h1 of headingCollection) {
-            console.log(h1.innerText);
+        // for (const h1 of headingCollection) {
+        //     console.log(h1.innerText);
+        // }
+        const Places = document.getElementsByClassName('item');
+        for (const place of Places) {
+            console.log(place.innerText);
         }
     </script>
 </body>
